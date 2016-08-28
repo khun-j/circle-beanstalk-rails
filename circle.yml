@@ -8,7 +8,7 @@ deployment:
       - bash ./config-aws.sh
       - eb deploy
   staging:
-    branch: master
+    branch: staging
     commands: 
       - bash ./config-aws.sh
       - eb deploy
