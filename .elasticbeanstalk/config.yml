@@ -2,6 +2,9 @@ branch-defaults:
   master:
     environment: blog-env
     group_suffix: null
+  staging:
+    environment: beanstalkrails-staging
+    group_suffix: null
 global:
   application_name: BeanstalkRails
   default_ec2_keyname: null
