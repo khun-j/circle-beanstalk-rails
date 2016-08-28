@@ -6,7 +6,7 @@ deployment:
     branch: master
     commands:
       - bash ./config-aws.sh
-      - eb deploy
+      - SECRET_KEY_BASE=$SECRET_KEY_BASE eb deploy
   staging:
     branch: staging
     commands: 
