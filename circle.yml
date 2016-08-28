@@ -1,0 +1,10 @@
+dependencies:
+  pre:
+    - pip install awsebcli
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - bash ./config-aws.sh
+      - eb deploy
